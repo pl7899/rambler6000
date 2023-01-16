@@ -1,0 +1,1 @@
+PREFERRED_VERSION_python-pillow = "9.4.0"
