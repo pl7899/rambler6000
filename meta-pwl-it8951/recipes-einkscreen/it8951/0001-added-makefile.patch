@@ -1,0 +1,25 @@
+From a3291aae9dbab7c860fc055c6975872302d89a64 Mon Sep 17 00:00:00 2001
+From: peter lemasters <peter.lemasters@st.com>
+Date: Tue, 17 Jan 2023 23:38:25 -0500
+Subject: [PATCH] added makefile
+
+---
+ makefile | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 makefile
+
+diff --git a/makefile b/makefile
+new file mode 100644
+index 0000000..7f97ffd
+--- /dev/null
++++ b/makefile
+@@ -0,0 +1,6 @@
++# build an executable named myprog from myprog.c
++all: main.c 
++	$(CC) -o it8951 main.c
++
++clean: 
++	$(RM) it8951 *.o
+-- 
+2.25.1
+
