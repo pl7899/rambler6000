@@ -1,8 +1,10 @@
 [Unit]
-Description=GNU Hello World startup script
+Description=Start Floppy Monitoring at Reboot systemd service.
 
 [Service]
-ExecStart=/usr/bin/hello
+Type=forking
+RemainAfterExit=yes
+ExecStart=/home/root/install/startup.sh
 
 [Install]
 WantedBy=multi-user.target
